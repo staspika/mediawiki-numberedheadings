@@ -1,10 +1,30 @@
 <?php
-
+ 
+$messages = array();
+ 
 $magicWords = array();
 
 /** English (English) */
 $magicWords['en'] = array(
-	'MAG_NONUMBEREDHEADINGS' => array( 0, '__NONUMBEREDHEADINGS__' ),
+    'MAG_NUMBEREDHEADINGS' => array( 0, '__NUMBEREDHEADINGS__' ),
+    'MAG_NONUMBEREDHEADINGS' => array( 0, '__NONUMBEREDHEADINGS__' ),
+);
+
+/** German (Deutsch) */
+$magicWords['de'] = array(
+    'MAG_NONUMBEREDHEADINGS' => array( 0, '__KEINEÜERSCHRIFTENNUMMERIERUNG__', '__NONUMBEREDHEADINGS__' ),
+    'MAG_NUMBEREDHEADINGS' => array( 0, '__UEBERSCHRIFTENNUMMERIERUNG__' ), /* not working with Umlaut */
+);
+
+/** Colognian (Ripoarisch) */
+$magicWords['ksh'] = array(
+    'MAG_NONUMBEREDHEADINGS' => array( 0, '__ÖVERSCHRIFTENITNUMMERIERE__', '__KEINEÜERSCHRIFTENNUMMERIERUNG__', '__NONUMBEREDHEADINGS__' ),
+    'MAG_NUMBEREDHEADINGS' => array( 0, '__OEVVERSCHRIFTENUMMERIERE__' ), /* not working with Umlaut */
+);
+
+/** Norwegian Bokmål (Norsk bokmål)*/
+$magicWords['nb'] = array(
+        'MAG_NUMBEREDHEADINGS' => array( 0, '__NUMBEREDHEADINGS__', '__NUMERERTEOVERSKRIFTER__'),
 );
 
 /** Arabic (العربية) */
@@ -22,19 +42,9 @@ $magicWords['ce'] = array(
 	'MAG_NONUMBEREDHEADINGS' => array( 0, '__ТЕРАХЬДОЦУШКОРТА__', '__БЕЗНОМЕРОВЗАГОЛОВКОВ__', '__NONUMBEREDHEADINGS__' ),
 );
 
-/** German (Deutsch) */
-$magicWords['de'] = array(
-	'MAG_NONUMBEREDHEADINGS' => array( 0, '__KEINEÜERSCHRIFTENNUMMERIERUNG__', '__NONUMBEREDHEADINGS__' ),
-);
-
 /** Spanish (Español) */
 $magicWords['es'] = array(
 	'MAG_NONUMBEREDHEADINGS' => array( 0, '__ENCABEZADOSNOENUMERADOS__', '__NONUMBEREDHEADINGS__' ),
-);
-
-/** Colognian (Ripoarisch) */
-$magicWords['ksh'] = array(
-	'MAG_NONUMBEREDHEADINGS' => array( 0, '__ÖVERSCHRIFTENITNUMMERIERE__', '__KEINEÜERSCHRIFTENNUMMERIERUNG__', '__NONUMBEREDHEADINGS__' ),
 );
 
 /** Malayalam (മലയാളം) */
@@ -76,3 +86,4 @@ $magicWords['tr'] = array(
 $magicWords['uk'] = array(
 	'MAG_NONUMBEREDHEADINGS' => array( 0, '__БЕЗНОМЕРІВЗАГОЛОВКІВ__', '__БЕЗНОМЕРОВЗАГОЛОВКОВ__', '__NONUMBEREDHEADINGS__' ),
 );
+ 
