@@ -20,11 +20,6 @@
 		"NumberedHeadings": "NumberedHeadings.class.php"
 	},
 	"Hooks": {
-		"MagicWordMagicWords": [
-			"NumberedHeadings::onMagicWordMagicWords"
-		],
-		"MagicWordwgVariableIDs": ["NumberedHeadings::onMagicWordwgVariableIDs"],
-		"InternalParseBeforeLinks": ["NumberedHeadings::onInternalParseBeforeLinks"],
 		"ParserBeforeInternalParse": ["NumberedHeadings::onParserBeforeInternalParse"]
 	},
 	"manifest_version": 1
