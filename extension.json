@@ -1,0 +1,32 @@
+{
+	"name": "NumberedHeadings",
+	"version": "1.12",
+	"author": ["Purodha Blissenbach", "Stanislav Pika"],
+	"url": "https://www.mediawiki.org/wiki/Extension:MagicNumberedHeadings",
+	"descriptionmsg": "numberedheadings-desc",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"NumberedHeadings": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"MagicNumberedHeadings": "MagicNumberedHeadings.i18n.php",
+		"MagicNoNumberedHeadings": "MagicNoNumberedHeadings.i18n.php",
+		"MagicNoNumberedHeadingsMagic": "MagicNoNumberedHeadings.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"MagicNumberedHeadings": "MagicNumberedHeadings.php",
+		"MagicNoNumberedHeadings": "MagicNoNumberedHeadings.php"
+	},
+	"Hooks": {
+		"MagicWordMagicWords": [
+			"MagicNumberedHeadings::MagicNumberedHeadingsMagicWordMagicWords",
+			"MagicNoNumberedHeadings::MagicNoNumberedHeadingsMagicWordMagicWords"
+		],
+		"MagicWordwgVariableIDs": ["MagicNumberedHeadings::MagicNumberedHeadingsMagicWordwgVariableIDs"],
+		"InternalParseBeforeLinks": ["MagicNumberedHeadings::MagicNumberedHeadingsInternalParseBeforeLinks"],
+		"ParserBeforeInternalParse": ["MagicNoNumberedHeadings::MagicNoNumberedHeadingsParserBeforeInternalParse"]
+	},
+	"manifest_version": 1
+}
