@@ -25,7 +25,8 @@ $magicWords['ksh'] = array(
 );
 /** Norwegian Bokmål (Norsk bokmål)*/
 $magicWords['nb'] = array(
-        'MAG_NUMBEREDHEADINGS' => array( 0, '__NUMBEREDHEADINGS__', '__NUMERERTEOVERSKRIFTER__'),
+    'MAG_NUMBEREDHEADINGS' => array( 0, '__NUMBEREDHEADINGS__', '__NUMERERTEOVERSKRIFTER__'),
+    'MAG_NONUMBEREDHEADINGS' => array(0, '__NONUMBEREDHEADINGS__', '__NUMERERTEOVERSKRIFTER__'),
 );
 /** Arabic (العربية) */
 $magicWords['ar'] = array(
@@ -61,6 +62,7 @@ $magicWords['nl'] = array(
 );
 /** Russian (Русский) */
 $magicWords['ru'] = array(
+    'MAG_NUMBEREDHEADINGS' => array( 0, '__НОМЕРАЗАГОЛОВКОВ__', '__NUMBEREDHEADINGS__' ),
     'MAG_NONUMBEREDHEADINGS' => array( 0, '__БЕЗНОМЕРОВЗАГОЛОВКОВ__', '__NONUMBEREDHEADINGS__' ),
 );
 /** Swedish (Svenska) */
