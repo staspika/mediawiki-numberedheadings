@@ -20,7 +20,7 @@
 		"NumberedHeadings": "NumberedHeadings.class.php"
 	},
 	"Hooks": {
-		"ParserBeforeInternalParse": ["NumberedHeadings::onParserBeforeInternalParse"]
+		"InternalParseBeforeLinks": ["NumberedHeadings::onInternalParseBeforeLinks"]
 	},
 	"manifest_version": 1
 }

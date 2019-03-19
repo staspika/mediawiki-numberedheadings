@@ -20,7 +20,7 @@ class NumberedHeadings
      * Function call to toggle autonumbering on hook
      * ParserBeforeInternalParse.
      */
-    public static function onParserBeforeInternalParse(
+    public static function onInternalParseBeforeLinks(
         &$parser,
         &$text,
         &$strip_state
