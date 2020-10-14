@@ -25,9 +25,9 @@ class NumberedHeadings
         &$text,
         &$strip_state
     ) {
-        if (MagicWordFactory::get('MAG_NUMBEREDHEADINGS')->matchAndRemove($text)) {
+        if (MediaWiki\MediaWikiServices::getInstance()->getMagicWordFactory()->get('MAG_NUMBEREDHEADINGS')->matchAndRemove($text)) {
             $parser->mOptions->setNumberHeadings(true);
-        } elseif (MagicWordFactory::get('MAG_NONUMBEREDHEADINGS')->matchAndRemove($text)) {
+        } elseif (MediaWiki\MediaWikiServices::getInstance()->getMagicWordFactory()->get('MAG_NONUMBEREDHEADINGS')->matchAndRemove($text)) {
             $parser->mOptions->setNumberHeadings(false);
         }
         return true;
