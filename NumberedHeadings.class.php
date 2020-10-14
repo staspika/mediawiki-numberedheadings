@@ -25,9 +25,9 @@ class NumberedHeadings
         &$text,
         &$strip_state
     ) {
-        if (MagicWord::get('MAG_NUMBEREDHEADINGS')->matchAndRemove($text)) {
+        if (MagicWordFactory::get('MAG_NUMBEREDHEADINGS')->matchAndRemove($text)) {
             $parser->mOptions->setNumberHeadings(true);
-        } elseif (MagicWord::get('MAG_NONUMBEREDHEADINGS')->matchAndRemove($text)) {
+        } elseif (MagicWordFactory::get('MAG_NONUMBEREDHEADINGS')->matchAndRemove($text)) {
             $parser->mOptions->setNumberHeadings(false);
         }
         return true;
