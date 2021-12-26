@@ -1,3 +1,8 @@
 {
+	"@metadata": {
+		"authors": [
+			"Stanislav Pika"
+		]
+	},
 	"numberedheadings-desc": "Eksplisitt slå av og på autonummerering i artikler."
 }
