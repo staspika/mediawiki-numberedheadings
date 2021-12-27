@@ -3,7 +3,7 @@
 	"version": "1-beta",
 	"author": [
 		"Purodha Blissenbach",
-		"Stanislav Pika",
+		"Stanislav Pika"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:MagicNumberedHeadings",
 	"descriptionmsg": "numberedheadings-desc",
