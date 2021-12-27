@@ -1,3 +1,9 @@
 {
-    "numberedheadings-desc" :  "Description of the extension"
+	"@metadata": {
+		"authors": [
+			"Stanislav Pika",
+			"Kizule"
+		]
+	},
+	"numberedheadings-desc": "{{desc|name=NumberedHeadings}}"
 }
